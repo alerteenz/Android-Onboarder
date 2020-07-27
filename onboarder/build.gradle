@@ -10,18 +10,18 @@ def getVersionName = { ->
     return "1.0.2"
 }
 
-def getArtificatId = { ->
-    return "caringservices.xyz"
+def getArtifactId = { ->
+    return "onboarder"
 }
 
 
 publishing {
     publications {
-        bar(MavenPublication) {
-            groupId 'com.enefce.libraries'
-            artifactId getArtificatId()
+        bar (MavenPublication) {
+            groupId 'caringservices.xyz'
+            artifactId getArtifactId()
             version getVersionName()
-            artifact("$buildDir/outputs/aar/${getArtificatId()}-release.aar")
+            artifact("$buildDir/outputs/aar/${getArtifactId()}-release.aar")
         }
     }
     repositories {
