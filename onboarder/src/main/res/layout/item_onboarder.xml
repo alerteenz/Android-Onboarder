@@ -6,23 +6,24 @@
     android:layout_height="match_parent"
     android:padding="@dimen/button_layout_margin"
     tools:background="#00AA00">
-
-    <ImageView
-        android:id="@+id/image_top"
-        app:layout_constraintBottom_toTopOf="@+id/textview_title"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:background="@drawable/ic_android_white_192dp"
-        style="@style/Onboarder_Image_Style" />
-
     <TextView
         android:id="@+id/textview_title"
         style="@style/Onboarder_Title_Style"
+        android:layout_margin="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="{Hello World}" />
+
+    <ImageView
+        android:id="@+id/image_top"
+        app:layout_constraintTop_toBottomOf="@+id/textview_title"
         app:layout_constraintBottom_toTopOf="@+id/textview_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:text="{Hello World}" />
+        tools:background="@drawable/ic_android_white_192dp"
+        style="@style/Onboarder_Image_Style" />
+
 
     <TextView
         android:id="@+id/textview_description"
