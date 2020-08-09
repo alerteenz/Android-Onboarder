@@ -10,7 +10,10 @@
     <TextView
         android:id="@+id/textview_title"
         style="@style/Onboarder_Title_Style"
-        android:layout_margin="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -23,7 +26,6 @@
         android:layout_marginBottom="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/textview_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textview_title"
@@ -35,8 +37,8 @@
         style="@style/Onboarder_Description_Style"
         app:layout_constraintTop_toBottomOf="@+id/image_top"
         app:layout_constraintBottom_toTopOf="@id/button_miscellaneous"
-        app:layout_constraintEnd_toEndOf="@id/button_miscellaneous"
-        app:layout_constraintStart_toStartOf="@id/button_miscellaneous"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor pretium viverra suspendisse potenti nullam." />
 
 
