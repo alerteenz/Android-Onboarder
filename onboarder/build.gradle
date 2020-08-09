@@ -7,7 +7,7 @@ def githubProperties = new Properties()
 githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
 
 def getVersionName = { ->
-    return "1.0.2"
+    return "1.0.3"
 }
 
 def getArtifactId = { ->
@@ -27,7 +27,7 @@ publishing {
     repositories {
         maven {
             name = "Android-Onboarder"
-            url = uri("https://maven.pkg.github.com/boscohq/Android-Onboarder")
+            url = uri("https://maven.pkg.github.com/alerteenz/Android-Onboarder")
             credentials {
                 username = githubProperties['gpr.usr']
                 password = githubProperties['gpr.key']
