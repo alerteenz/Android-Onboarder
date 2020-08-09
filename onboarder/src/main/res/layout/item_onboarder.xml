@@ -6,10 +6,11 @@
     android:layout_height="match_parent"
     android:padding="@dimen/button_layout_margin"
     tools:background="#00AA00">
+
     <TextView
         android:id="@+id/textview_title"
         style="@style/Onboarder_Title_Style"
-        android:layout_margin="30dp"
+        android:layout_margin="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -17,17 +18,22 @@
 
     <ImageView
         android:id="@+id/image_top"
-        app:layout_constraintTop_toBottomOf="@+id/textview_title"
+        style="@style/Onboarder_Image_Style"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toTopOf="@+id/textview_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:background="@drawable/ic_android_white_192dp"
-        style="@style/Onboarder_Image_Style" />
+        app:layout_constraintTop_toBottomOf="@+id/textview_title"
+        tools:background="@drawable/ic_android_white_192dp" />
 
 
     <TextView
         android:id="@+id/textview_description"
         style="@style/Onboarder_Description_Style"
+        app:layout_constraintTop_toBottomOf="@+id/image_top"
         app:layout_constraintBottom_toTopOf="@id/button_miscellaneous"
         app:layout_constraintEnd_toEndOf="@id/button_miscellaneous"
         app:layout_constraintStart_toStartOf="@id/button_miscellaneous"
@@ -36,11 +42,15 @@
 
     <Button
         android:id="@+id/button_miscellaneous"
+        style="@style/Onboarder_Miscellaneous_Style"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="{Hello World}"
-        tools:visibility="visible"
-        style="@style/Onboarder_Miscellaneous_Style" />
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
